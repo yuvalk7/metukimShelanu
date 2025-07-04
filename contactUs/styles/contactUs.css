@@ -1,0 +1,270 @@
+﻿
+/*עיצוב כללי*/
+
+body{
+    direction:rtl;
+    margin:0 auto;
+    font-family: Arial , sans-serif;
+}
+
+#container{
+    width: 1280px;
+    margin: 0 auto;
+    background-color:#FAF9F9;
+}
+
+#content{
+    width:1280px;
+    margin:0 auto;
+    padding:50px 115px;
+    max-width: 1000px;
+}
+
+ h1{
+    font-size:48px;
+    margin-top:20px;
+     padding:0 ;
+     text-align:right;
+     color:#57320E;
+}
+
+h2{
+    font-size:32px;
+    margin-top:20px;
+}
+
+ p{
+    font-size:18px;
+    line-height:30px;
+    margin-top: 10px;
+}
+
+/* סרגל ניווט*/
+ 
+ 
+#nav1{
+    z-index:1;
+    position:sticky;
+    top:0;
+    background-color:#FAEDCD;
+    width:1280px;
+    margin:0 auto;
+}
+#nav1 ul{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    padding:0;
+    margin:0 auto;
+    position:relative;
+}
+
+#nav1 li {
+    display:inline-block;
+    float:right;
+}
+#nav1 ul li a{
+    display: block;
+    background-color:#FAEDCD;
+    color:black;
+    width:150px;
+    height:50px;
+    text-align:center;
+    text-decoration:none;
+    line-height:50px;
+}
+
+#nav1 ul li a:hover{
+    background-color:#D4A373;
+}
+
+#mainNav ul li ul{
+    display:none;
+    position:absolute;
+}
+#mainNav ul li:hover ul{
+    display:block;
+    width:150px;
+}
+.notActive{
+    cursor:not-allowed;
+    color:gray;
+}
+
+
+#maafim{
+    cursor:not-allowed;
+    color:black;
+}
+
+/*פירורי לחם*/
+
+#breadNav ol li{
+    list-style:none;
+    display:inline-block;
+}
+
+#breadNav ol li:last-child:before{
+    content:">";
+}
+#breadNav ol{
+    padding:0;
+}
+
+/*טופס צור קשר*/
+
+form {
+    margin:20px auto;
+    font-size:18px;
+    line-height:30px;
+    min-width: 500px;
+    text-align:right;
+}
+
+form label{
+    display:block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+form label span {
+    display:inline-block;
+    margin-bottom:5px;
+}
+
+
+form fieldset{
+    border:none;
+    margin:20px 0;
+    padding:0px;
+}
+
+form fieldset legend{
+    display:inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form fieldset label{
+    display:inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+
+.area {
+    display:block;
+    font-size: 16px;
+    margin-top: 25px ;
+    margin-bottom: 10px;
+}
+
+.note {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+
+.txtBox {
+    background-color:#FAEDCD;
+    border:1px solid #B08968;
+    border-radius:5px;
+    padding: 6px;
+    display:block;
+    font-size:16px;
+    margin-top:5px;
+}
+
+/*לא למדנו פוקוס, אך חקרתי כדי שיהיה סימן ויזואלי למשתמש כאשר הוא לוחץ על התיבה*/
+.txtBox:focus {
+    outline:none;
+    border: 2px solid #7B5E42;
+    background-color: #FFF6E5;
+}
+
+.required-star {
+    color: brown;
+}
+
+.rad {
+    appearance: none; /*העיצוב של ברירת המחדל התנגש ולכן בדקתי כיצד להתגבר על זה*/
+    width:18px;
+    height:18px;
+    border: 1px solid #B08968;
+    border-radius:8px;
+    background-color:#FAEDCD;
+    vertical-align:middle;
+}
+
+.rad:checked {
+    background-color:#D4A373; 
+}
+
+
+#send {
+    background-color:#D4A373;
+    border:1px solid #B08968;
+    padding: 10px 30px;
+}
+
+#send:hover {
+    background-color: #FAEDCD;
+}
+
+/*תמונות*/
+
+.imgFormContainer {
+    display: table;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.imgBox {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 30px;
+}
+
+.imgBox img {
+    display: block;
+    margin-bottom: 20px;
+    width: 300px;
+    height:300px;
+}
+
+.imgFormContainer form {
+    display: table-cell;
+    vertical-align: top;
+}
+
+/*footer*/
+
+footer{
+    z-index:1;
+    position:relative;
+    width:1280px;
+    height:80px;
+    background-color:#FAEDCD;
+    margin-top:100px;
+    text-align:center;
+}
+ footer ul li{
+     display: inline-block;
+     background-color:#FAEDCD;
+     color:black;
+     width:150px;
+     height:50px;
+     text-align:center;
+     line-height:50px;
+     margin:0 20px;
+   
+ }
+ footer ul li a{
+     text-decoration:none;
+     color:blue;
+ }
+footer ul li:hover a{
+    text-decoration:underline; 
+    color:blue;
+}
+

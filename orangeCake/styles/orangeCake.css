@@ -1,0 +1,205 @@
+﻿body{
+    direction:rtl;
+    margin:0 auto;
+    font-family: Arial , sans-serif;
+}
+#container{
+    width: 1280px;
+    margin: 0 auto;
+    background-color:#FAF9F9;
+}
+#content{
+    width:1160px;
+    padding:50px 40px;
+}
+#nav1{
+    z-index:1;
+    position:sticky;
+    top:0;
+    background-color:#FAEDCD;
+    width:1280px;
+    margin:0 auto;
+}
+#nav1 ul{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    padding:0;
+    margin:0 auto;
+    position:relative;
+}
+
+#nav1 li {
+    display:inline-block;
+    float:right;
+}
+#nav1 ul li a{
+    display: block;
+    background-color:#FAEDCD;
+    color:black;
+    width:150px;
+    height:50px;
+    text-align:center;
+    text-decoration:none;
+    line-height:50px;
+}
+
+#nav1 ul li a:hover{
+    background-color:#D4A373;
+}
+
+#mainNav ul li ul{
+    display:none;
+    position:absolute;
+}
+#mainNav ul li:hover ul{
+    display:block;
+    width:150px;
+}
+.notActive{
+    cursor:not-allowed;
+    color:gray;
+}
+
+#maafim{
+    cursor:not-allowed;
+    color:black;
+}
+
+/*עמוד תוכן*/
+
+.header {
+    display:flex;
+    padding: 0 40px;
+    gap: 50px;
+    align-items: center;
+    background-color: #FFF5EB;
+    margin-bottom: 20px;
+    
+    
+}
+.cake{
+    width:200px;
+    height:250px;
+}
+.table{
+    width:50px; 
+    height: 50px;
+    margin-bottom: 10px;
+}
+.icon{
+    width:70px;
+    height:70px;
+}
+
+h1{font-size: 48px;
+    color:#57320E;
+}
+
+h2{font-size: 32px;
+color:#57320E;
+}
+
+h3{font-size: 25px;
+    color:#57320E;}
+
+b{font-size: 20px;}
+
+main{
+    font-size: 18px;
+    padding: 0 40px;
+}
+
+.info-wrapper {
+    display: flex;
+    width: 1280px;
+    height: 120px;
+    justify-content: space-evenly;
+    background-color: #FAEDCD;
+    align-items: center;
+}
+
+.info_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF5EB;
+    width: 110px;
+    height: 110px;
+}
+
+.instructions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 350px;
+    margin-top: 10px;
+}
+
+.ingredients {
+    background-color: #FFF5EB;
+    width: 300px;
+    padding-right: 10px;
+}
+
+.optional {
+    width:300px;
+    height: 200px;
+    background-color: #FFF5EB;
+    padding-right: 10px;
+}
+
+.making-instructions {
+    background-color: #FFF5EB;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.cooking-instructions{
+    line-height: 1.5;
+}
+
+footer{
+    z-index:1;
+    position:relative;
+    width:1280px;
+    height:80px;
+    background-color:#FAEDCD;
+    text-align:center;
+    margin-top:100px;
+}
+footer ul li{
+    display: inline-block;
+    background-color:#FAEDCD;
+    color:black;
+    width:150px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    margin:0 20px;
+
+}
+footer ul li a{
+    text-decoration:none;
+    color:blue;
+}
+footer ul li:hover a{
+    text-decoration:underline;
+    color:blue;
+}
+
+
+#breadNav ol li{
+    list-style:none;
+    display:inline-block;
+}
+
+#breadNav ol li:not(:first-child):before{
+    content:">";
+}
+#breadNav ol{
+    padding:0;
+}
+.breadcrumbs{
+    padding-right: 40px;
+}
